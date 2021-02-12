@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un acteur{% endblock %}
+
+{% block body %}
+    <section>
+        {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            {{ form_row(form.prenom) }}
+
+            <button type="submit">Valider</button>
+        {{ form_end(form) }}
+    </section>
+{% endblock %}
